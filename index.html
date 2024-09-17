@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Flashcard</title>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Química</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é uma reação de decomposição?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Uma reação de decomposição é um tipo de reação química em que um composto é quebrado em dois ou mais produtos mais simples.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Matemática</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é um número primo? </p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Um número primo é um número natural maior que 1 que só tem dois divisores positivos: 1 e ele mesmo.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>História</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Quem foi o imperador romano conhecido por dividir o Império Romano em duas partes?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>O imperador romano Diocleciano.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Biologia</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é o principal componente da membrana celular?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> O fosfolipídio.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Física</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é velocidade?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> Velocidade é a taxa de variação da posição de um objeto em relação ao tempo.
+
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Português</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é um advérbio?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> Um advérbio é uma palavra que modifica o sentido de um verbo, adjetivo ou outro advérbio, indicando como, quando, onde ou com que intensidade algo acontece.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Sociologia</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é uma norma social?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>  Uma norma social é uma regra ou expectativa que guia o comportamento dos indivíduos em uma sociedade.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Geografia</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é o maior oceano do mundo?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>O Oceano Pacífico.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Literatura</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Quem escreveu "Dom Casmurro"?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> Machado de Assis.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>StudySpark:Onde a sustentabilidade se une à tecnologia. C</p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="perguntas.js"></script>
+
+    <script>
+        // Seleciona todos os cartões
+        const cartoes = document.querySelectorAll('.cartao');
+    
+        // Adiciona o evento de clique em cada cartão
+        cartoes.forEach(cartao => {
+            cartao.addEventListener('click', function() {
+                // Alterna a classe 'virado' no cartão clicado
+                cartao.classList.toggle('virado');
+            });
+        });
+    </script>
+</body>
+</html>
